@@ -30,6 +30,7 @@ innych programów. Jest zgodny z KDE, GNOME, XFce i wieloma innymi.
 %{__perl} -pi -e 's/\/local//' kdocker.pro
 qmake
 %{__perl} -pi -e 's/-lqt/-lqt-mt/' Makefile
+%{__perl} -pi -e 's/lib/%{_lib}/' Makefile
 %{__make} QTDIR='%{_prefix}'
 
 %install
