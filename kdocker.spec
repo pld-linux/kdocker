@@ -7,7 +7,6 @@ License:	GPL v2
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/kdocker/%{name}-%{version}.tar.gz
 # Source0-md5:	b2c5b0aec0da8323159625d782eff409
-# Source0-size:	446771
 Source1:	%{name}.desktop
 URL:		http://kdocker.sourceforge.net/
 BuildRequires:	qmake
