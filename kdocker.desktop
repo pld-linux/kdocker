@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=KDocker
+Comment=Docks any application into system tray
+Comment[pl]=Dokuje aplikacje w zasobniku systemowym
+Exec=kdocker
+TryExec=kdocker
+Icon=/usr/share/kdocker/icons/kdocker.png
+Terminal=false
+Type=Application
+Categories=Qt;Utility;
+# vi: encoding=utf-8
