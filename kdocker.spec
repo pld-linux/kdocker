@@ -17,12 +17,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 KDocker docks any application in the system tray. This makes it
 possible to dock OpenOffice, XMMS, Firefox, Thunderbird, and other
-programs. Works for KDE, GNOME, XFce and many more.
+programs. Works for KDE, GNOME, Xfce and many more.
 
 %description -l pl
 KDocker pozwala na dokowanie ka¿dej aplikacji w zasobniku systemowym.
 Pozwala to na dokowanie OpenOffice'a, XMMS-a, Firefoksa, Thunderbirda
-i innych programów. Jest zgodny z KDE, GNOME, XFce i wieloma innymi.
+i innych programów. Jest zgodny z KDE, GNOME, Xfce i wieloma innymi.
 
 %prep
 %setup -q -n %{name}
