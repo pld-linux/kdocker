@@ -11,17 +11,18 @@ Source1:	%{name}.desktop
 URL:		http://kdocker.sourceforge.net/
 BuildRequires:	qmake
 BuildRequires:	qt-devel >= 3.0.0
+BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 KDocker docks any application in the system tray. This makes it
-possible to dock openoffice, xmms, firefox, thunderbird, and other
+possible to dock OpenOffice, XMMS, Firefox, Thunderbird, and other
 programs. Works for KDE, GNOME, XFce and many more.
 
 %description -l pl
 KDocker pozwala na dokowanie ka¿dej aplikacji w zasobniku systemowym.
-Pozwala to na dokowanie openoffice'a, xmmsa, firefoxa, thunderbirda i
-innych programów. Jest zgodny z KDE, GNOME, XFce i wieloma innymi.
+Pozwala to na dokowanie OpenOffice'a, XMMS-a, Firefoksa, Thunderbirda
+i innych programów. Jest zgodny z KDE, GNOME, XFce i wieloma innymi.
 
 %prep
 %setup -q -n %{name}
@@ -31,7 +32,8 @@ sed -i -e 's/\/local//' kdocker.pro
 qmake
 sed -i -e 's/-lqt/-lqt-mt/' Makefile
 sed -i -e 's/lib/%{_lib}/' Makefile
-%{__make} QTDIR='%{_prefix}'
+%{__make} \
+	QTDIR='%{_prefix}'
 
 %install
 rm -rf $RPM_BUILD_ROOT
