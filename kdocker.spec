@@ -27,10 +27,10 @@ innych programów. Jest zgodny z KDE, GNOME, XFce i wieloma innymi.
 %setup -q -n %{name}
 
 %build
-%{__perl} -pi -e 's/\/local//' kdocker.pro
+sed -i -e 's/\/local//' kdocker.pro
 qmake
-%{__perl} -pi -e 's/-lqt/-lqt-mt/' Makefile
-%{__perl} -pi -e 's/lib/%{_lib}/' Makefile
+sed -i -e 's/-lqt/-lqt-mt/' Makefile
+sed -i -e 's/lib/%{_lib}/' Makefile
 %{__make} QTDIR='%{_prefix}'
 
 %install
