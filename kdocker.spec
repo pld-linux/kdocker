@@ -1,12 +1,12 @@
 Summary:	System tray docker for applications
 Summary(pl):	Program do dokowania aplikacji w zasobniku systemowym
 Name:		kdocker
-Version:	1.0
-Release:	0.1
+Version:	1.2
+Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/kdocker/%{name}-%{version}.tar.gz
-# Source0-md5:	b2c5b0aec0da8323159625d782eff409
+# Source0-md5:	b594b5aa544378afe946f1b8ee9efe16
 Source1:	%{name}.desktop
 URL:		http://kdocker.sourceforge.net/
 BuildRequires:	qmake
