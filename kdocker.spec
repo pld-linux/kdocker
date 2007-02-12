@@ -1,5 +1,5 @@
 Summary:	System tray docker for applications
-Summary(pl):	Program do dokowania aplikacji w zasobniku systemowym
+Summary(pl.UTF-8):   Program do dokowania aplikacji w zasobniku systemowym
 Name:		kdocker
 Version:	1.3
 Release:	1
@@ -19,10 +19,10 @@ KDocker docks any application in the system tray. This makes it
 possible to dock OpenOffice, XMMS, Firefox, Thunderbird, and other
 programs. Works for KDE, GNOME, Xfce and many more.
 
-%description -l pl
-KDocker pozwala na dokowanie kaødej aplikacji w zasobniku systemowym.
+%description -l pl.UTF-8
+KDocker pozwala na dokowanie ka≈ºdej aplikacji w zasobniku systemowym.
 Pozwala to na dokowanie OpenOffice'a, XMMS-a, Firefoksa, Thunderbirda
-i innych programÛw. Jest zgodny z KDE, GNOME, Xfce i wieloma innymi.
+i innych program√≥w. Jest zgodny z KDE, GNOME, Xfce i wieloma innymi.
 
 %prep
 %setup -q -n %{name}
