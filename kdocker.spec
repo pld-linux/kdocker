@@ -1,5 +1,5 @@
 Summary:	System tray docker for applications
-Summary(pl.UTF-8):   Program do dokowania aplikacji w zasobniku systemowym
+Summary(pl.UTF-8):	Program do dokowania aplikacji w zasobniku systemowym
 Name:		kdocker
 Version:	1.3
 Release:	1
