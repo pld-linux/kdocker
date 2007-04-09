@@ -10,7 +10,7 @@ Source0:	http://dl.sourceforge.net/kdocker/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 URL:		http://kdocker.sourceforge.net/
 BuildRequires:	qmake
-BuildRequires:	qt-devel >= 3.0.0
+BuildRequires:	qt-devel >= 6:3.0.0
 BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
